@@ -1,0 +1,12 @@
+.commandList {
+    display: flex;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.main {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,69 @@
+
+button {
+    position: absolute;
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #304080;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #5060B0;
+}
+button:active {
+    background-color: #102060;
+}
+
+#forward_button {
+    top: 0;
+    left: 100px;
+    width: calc(100% - 200px);
+    height: 100px;
+}
+#backward_button {
+    bottom: 0;
+    left: 100px;
+    width: calc(100% - 200px);
+    height: 100px;
+}
+#left_button {
+    left: 0;
+    top: 100px;
+    bottom: 100px;
+    width: 100px;
+}
+#right_button {
+    right: 0;
+    top: 100px;
+    bottom: 100px;
+    width: 100px;
+}
+#m1up_button {
+    right: 120px;
+    bottom: 120px;
+    width: 100px;
+    height: 40px;
+}
+#m1down_button {
+    left: 120px;
+    bottom: 120px;
+    width: 100px;
+    height: 40px;
+}
+#video_feed {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    text-align: center;
+}
+
+#video_feed img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+}

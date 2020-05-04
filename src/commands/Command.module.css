@@ -1,0 +1,93 @@
+.command {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    cursor: move;
+    width: 120px;
+    height: 120px;
+    vertical-align: top;
+    text-align: center;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.selected {
+    box-shadow: 0 0 3px 5px #a0a0ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.command:global.sortable-chosen {
+    opacity: 0.5 !important;
+}
+
+.command:global.sortable-ghost {
+    opacity: 0 !important;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.editor {
+    margin: 5px 20px;
+}
+
+.editor :global input {
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    background-size: 40px 40px;
+    margin: 5px auto;
+}
+
+.forward {
+    background-color: #d9ffff;
+}
+.backward {
+    background-color: #ffdddd;
+}
+.left {
+    background-color: #d9ffdf;
+}
+.right {
+    background-color: #ffffcf;
+}
+.m1up, .m1down {
+    background-color: #cfcfcf;
+}
+
+.forward .icon {
+    background-image: url(../img/forward.png);
+}
+
+.backward .icon {
+    background-image: url(../img/backward.png);
+}
+
+.left .icon {
+    background-image: url(../img/left.png);
+}
+
+.right .icon {
+    background-image: url(../img/right.png);
+}
+
+.m1up .icon {
+    background-image: url(../img/m1up.png);
+}
+
+.m1down .icon {
+    background-image: url(../img/m1down.png);
+}
+

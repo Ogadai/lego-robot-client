@@ -1,0 +1,51 @@
+.control {
+    flex: 0 0 auto;
+    height: 300px;
+    display: flex;
+}
+
+.buttons {
+    flex: 1 1 auto;
+    margin: auto;
+    text-align: center;
+}
+
+.video {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 300px;
+}
+
+.button {
+    margin: 20px;
+    padding: 40px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btnStart {
+    composes: button;
+    background-color: #90C978;
+}
+.btnStart:hover {
+    background-color: #AFD5AA;
+}
+.btnStart:active {
+    background-color: #80B065;
+}
+
+.btnStop {
+    composes: button;
+    background-color: #dc453d;
+}
+.btnStop:hover {
+    background-color: #ff6961;
+}
+.btnStop:active {
+    background-color: #c33c23;
+}
