@@ -1,11 +1,15 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import styles from './Control.module.css';
 import setupClient from './lego-client';
 
 const Control = ({ running, onStart, onStop }) => {
+    const [videoOn, setVideoOn] = useState(false);
     const videoCanvas = useRef();
     useEffect(() => {
-        setupClient(videoCanvas.current);
+        if (!videoOn) {
+            setupClient(videoCanvas.current);
+            setVideoOn(true);
+        }
     });
 
     return (
